@@ -7,19 +7,18 @@ class ShardApp {
 	nodes: Node[];
 	callbackFn: React.Dispatch<React.SetStateAction<ShardAppState>>;
 
-	// Create first node stores the first partition
+	// Create first node which stores the first partition
 	constructor(callbackFn: React.Dispatch<React.SetStateAction<ShardAppState>>) {
 		this.nodes = [];
 		this.callbackFn = callbackFn;
 
-		const firstPart = new Partition(0, MAX_KEY_SPACE);
-		const firstNode = this.createNode([firstPart]);
-		this.nodes.push(firstNode);
+		this.createNode([new Partition(0, MAX_KEY_SPACE)]);
 		console.log(this.nodes);
 	}
 
 	createNode(partitions?: Partition[]) {
 		const n = new Node(this.nodes.length, partitions);
+		this.nodes.push(n);
 		return n;
 	}
 
