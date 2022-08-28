@@ -1,7 +1,7 @@
 import Node from './Node';
 import { cyrb53 } from '../utils';
 import Partition from './Partition';
-import { MAX_KEY_SPACE, MAX_PARTITION_SIZE } from '../constants';
+import { MAX_KEY_SPACE, MAX_PARTITION_SIZE } from '../config';
 
 class ShardApp {
 	nodes: Node[];
@@ -46,7 +46,6 @@ class ShardApp {
 		if (partition.data.length > MAX_PARTITION_SIZE) {
 			console.log("Splitting partition");
 			this.splitPartition(partition);
-			console.log(this.nodes);
 		}
 		this.callbackFn(this.getState())
 	}
@@ -120,6 +119,15 @@ class ShardApp {
 	// Information about the nodes and partitions
 	getState() {
 		return { nodes: this.nodes };
+	}
+
+	reset() {
+		this.nodes = [];
+		this.createNode([new Partition(0, MAX_KEY_SPACE)]);
+	}
+
+	deleteNode(id: number) {
+		// TODO:
 	}
 }
 
