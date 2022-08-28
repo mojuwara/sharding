@@ -4,25 +4,22 @@ import Partition from './Partition';
 import { MAX_KEY_SPACE, MAX_PARTITION_SIZE } from '../constants';
 
 class ShardApp {
-	numNodes: number;
-	keyToNodeMap: Map<string, Node>; // Maps a string 'minKey-maxKey' to the node handling that key range
+	nodes: Node[];
 	callbackFn: React.Dispatch<React.SetStateAction<ShardAppState>>;
 
 	// Create first node stores the first partition
 	constructor(callbackFn: React.Dispatch<React.SetStateAction<ShardAppState>>) {
-		this.numNodes = 0;
+		this.nodes = [];
 		this.callbackFn = callbackFn;
-		this.keyToNodeMap = new Map<string, Node>();
 
-		const initPart = new Partition(0, MAX_KEY_SPACE);
-		const initNode = this.createNode([initPart]);
-		this.keyToNodeMap.set(this.getPartitionKey(initPart), initNode);
-		console.log(this.keyToNodeMap);
+		const firstPart = new Partition(0, MAX_KEY_SPACE);
+		const firstNode = this.createNode([firstPart]);
+		this.nodes.push(firstNode);
+		console.log(this.nodes);
 	}
 
 	createNode(partitions?: Partition[]) {
-		const n = new Node(this.numNodes, partitions);
-		this.numNodes++;
+		const n = new Node(this.nodes.length, partitions);
 		return n;
 	}
 
@@ -35,35 +32,36 @@ class ShardApp {
 		const hash = cyrb53(value.Name) % MAX_KEY_SPACE;
 		const node = this.findNodeWithKey(hash);
 		if (!node) {
-			console.error(`No node to handle key ${hash}, value: ${value}, map: ${this.keyToNodeMap}`);
+			console.error(`No node to handle key ${hash}, value: ${value}, nodes: ${this.nodes}`);
 			return;
 		}
 
 		const partition = node.getPartitionFor(hash);
 		if (!partition) {
-			console.error(`Unable to find partition for key ${hash}`)
+			console.error(`Unable to find partition for key ${hash}`);
 			return;
 		}
 
 		console.log(`Inserting into partition with keys ${this.getPartitionKey(partition)}`)
 		partition.data.push(value);
 		if (partition.data.length > MAX_PARTITION_SIZE) {
-			console.log("Splitting partition")
-			this.splitPartition(partition)
-			console.log(this.keyToNodeMap)
+			console.log("Splitting partition");
+			this.splitPartition(partition);
+			console.log(this.nodes);
 		}
 		this.callbackFn(this.getState())
 	}
 
+	// Split partition in two, have first node keep
 	splitPartition(p: Partition) {
 		if (p.minKey === p.maxKey) {
-			console.error(`Unable to split partition of 1 key: ${p}`)
-			return
+			console.error(`Unable to split partition of 1 key: ${p}`);
+			return;
 		}
 
 		const mid = p.minKey + Math.floor((p.maxKey - p.minKey) / 2);
-		const part1 = new Partition(p.minKey, mid)
-		const part2 = new Partition(mid + 1, p.maxKey)
+		const part1 = new Partition(p.minKey, mid);
+		const part2 = new Partition(mid + 1, p.maxKey);
 
 		// Insert data into the correct partition, TODO: Improve performance
 		for (const value of p.data) {
@@ -71,38 +69,42 @@ class ShardApp {
 			(part1.minKey <= hash && hash <= part1.maxKey) ? part1.data.push(value) : part2.data.push(value);
 		}
 
-		const leastBusyNode = this.getLeastBusyNode()
-		const originalNode = this.keyToNodeMap.get(this.getPartitionKey(p)); // Node that currently stores 'p'
+		const leastBusyNode = this.getLeastBusyNode();
+		const originalNode = this.findNodeWithKey(p.minKey); // Node that currently stores 'p'
 		if (!originalNode) {
 			console.error(`Unable to find node handling range ${p.minKey} - ${p.maxKey}. Got ${originalNode}`)
 			return
 		}
 
-		// update partition mapping
-		this.keyToNodeMap.delete(this.getPartitionKey(p))
-		this.keyToNodeMap.set(this.getPartitionKey(part1), originalNode)
-		this.keyToNodeMap.set(this.getPartitionKey(part2), leastBusyNode)
-
 		// Have nodes update their partitions
 		originalNode.updatePartition(p, part1);
 		leastBusyNode.insertPartition(part2);
+
+		// Possible that splitting didn't balance the partitions, all the values might
+		// belong to the first or second half of the key range for the partition.
+		// Try splitting again until we can no longer split(minKey === maxKey).
+		if (part1.data.length > MAX_PARTITION_SIZE)
+			this.splitPartition(part1);
+		if (part2.data.length > MAX_PARTITION_SIZE)
+			this.splitPartition(part2);
 	}
 
-	// TODO: Fix type annotations, currently infers 'any'
+	// TODO: Improve performance?
 	findNodeWithKey(hash: number) {
-		for (const [range, node] of this.keyToNodeMap) {
-			const [rangeStart, rangeEnd] = range.split('-').map(val => parseInt(val, 10));
-			if (rangeStart <= hash && hash <= rangeEnd)
-				return node;
+		for (const node of this.nodes) {
+			for (const part of node.partitions) {
+				if (part.minKey <= hash && hash <= part.maxKey)
+					return node;
+			}
 		}
 	}
 
 	// Returns the node with the least amount of records
 	getLeastBusyNode() {
 		let maxDataCount = 0;
-		let n: Node = this.keyToNodeMap.values().next().value;	// Init with first node
+		let n: Node = this.nodes[0];
 
-		for (const node of this.keyToNodeMap.values()) {
+		for (const node of this.nodes) {
 			let dataCount = 0;
 			for (const part of node.partitions) {
 				dataCount += part.data.length;
@@ -116,12 +118,9 @@ class ShardApp {
 		return n;
 	}
 
-	// Information about the nodes and partitions, TODO: more efficient way to get unique nodes
+	// Information about the nodes and partitions
 	getState() {
-		const uniqueNodes = new Map<number, Node>();
-		this.keyToNodeMap.forEach((node) => uniqueNodes.set(node.id, node));
-
-		return { nodes: Array.from(uniqueNodes.values()) };
+		return { nodes: this.nodes };
 	}
 }
 
