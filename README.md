@@ -18,5 +18,17 @@
 - Nodes can be added/removed from the UI
 	- It will trigger a rebalancing
 
-### Edge cases:
-- Partition of 1 key that exceeds `MAX_PARTITION_SIZE`
+### Performance improvements:
+- Application:
+	- Find node storing a key
+	- Find busiest & least busy nodes
+	- Insert/Delete nodes by their ID (Probably not very expensive)
+
+- Nodes:
+	- Find arbitrary partition given a hash
+	- Insert/Remove arbitrary partitions
+	- Find the biggest partition
+	- Total row count
+
+- Partitions:
+	- Split a partition

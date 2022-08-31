@@ -45,8 +45,8 @@
 	flex-direction: row;
 	flex-wrap: wrap;
 	align-items: flex-start;
-	/* height: 150px; */
-	overflow-y: scroll;
+	height: 150px;
+	overflow-y: auto;
 }
 
 .partition-grid > button {

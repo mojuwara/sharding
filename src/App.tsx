@@ -26,50 +26,77 @@ function App() {
 	const shardApp = useRef<ShardApp>(new ShardApp(setAppState));
 	const [isRunning, setIsRunning] = useState(false);
 	const [rowsToInsert, setRowsToInsert] = useState('1');
+	const intervalID = useRef<NodeJS.Timer>();
 	const [insertInterval, setInsertInterval] = useState('Once');
-	const [intervalID, setIntervalID] = useState<NodeJS.Timer>();
 	const [modalOpen, setModalOpen] = useState(false);
 	const [modalData, setModalData] = useState<any[]>([]);
 
 	const rowOptions = ['1', '5', '10', '50'];
-	const intervalOptions = ['Once', '0.5s', '1s', '3s'];
+	const intervalOptions = ['Once', '0.1s', '0.5s', '1s', '3s'];
 	// const partitionSizeOptions = ['1', '5', '10', '20'];
 
+	useEffect(() => {setAppState(shardApp.current.getState())}, []);
+
 	const resetApp = () => {
-		setIsRunning(false);
+		pause();
 		shardApp.current.reset();
 	}
 
-	// TODO: Fix dependency
-	useEffect(() => {
-		startInterval();
-	}, []);
-
-	const startInterval = () => {
-		setIntervalID(setInterval(insertData, 5000));
+	const handlePlayClick = () => {
+		(isRunning) ?	pause() :	play();
 	}
 
-	const stopInterval = () => {
-		clearInterval(intervalID);
+	const play = () => {
+		if (insertInterval === 'Once') {
+			insertData();
+			return;
+		} else {
+			const ms = 1000 * parseFloat(insertInterval.substring(0, insertInterval.length - 1));
+			intervalID.current = setInterval(insertData, ms);
+			setIsRunning(true);
+			console.log(ms);
+		}
+	}
+
+	const pause = () => {
+		clearInterval(intervalID.current);
+		setIsRunning(false);
 	}
 
 	const insertData = () => {
-		shardApp.current.insert(data[ndx.current]);
-		ndx.current++;
+		let rowsLeft = parseInt(rowsToInsert, 10);
+		while (ndx.current < data.length && rowsLeft) {
+			shardApp.current.insert(data[ndx.current]);
+			ndx.current++;
+			rowsLeft--;
+		}
 	}
 
-	// Pause application while demo is open
+	// Pause application while modal is open
 	const displayPartitionData = (p: Partition) => {
-		stopInterval();
+		pause();
 		setModalOpen(true);
 		setModalData(p.data);
+	}
+
+	const addNode = () => {
+		shardApp.current.createNode()
+		setAppState(shardApp.current.getState());
+	}
+
+	const deleteNode = (id: number) => {
+		shardApp.current.deleteNode(id);
 	}
 
 	appState.nodes.forEach(node => node.partitions.sort((a, b) => a.minKey - b.minKey))
 
   return (
     <div className="app-container">
-			<Dialog open={modalOpen} onClose={() => setModalOpen(false)}>{modalData.map((d, n) => <p key={n}>{d.Name}</p>)}</Dialog>
+			<Dialog open={modalOpen} onClose={() => setModalOpen(false)}>
+				{(modalData.length)
+					? modalData.map((d, n) => <p key={n}>{d.Name}</p>)
+					: "No data"}
+			</Dialog>
 			<div className='heading'>
 				<h2>Partitioning with Dynamic Rebalancing</h2>
 				<h3>By Mahamadou Juwara</h3>
@@ -79,7 +106,7 @@ function App() {
 					<IconButton aria-label="Reset" onClick={resetApp}>
 						<RestartAltIcon />
 					</IconButton>
-					<IconButton aria-label="Play-resume" onClick={() => setIsRunning(!isRunning)}>
+					<IconButton aria-label="Play-resume" onClick={() => handlePlayClick()}>
 						{(isRunning) ? <PauseCircleIcon /> : <PlayCircleIcon />}
 					</IconButton>
 					<TextField
@@ -119,7 +146,7 @@ function App() {
 				<div className="node-container">
 				{appState.nodes.map((node: Node, ndx: number) => (
 					<div key={ndx} className="node">
-						<IconButton size='small' aria-label="Delete" onClick={() => shardApp.current.deleteNode(node.id)}>
+						<IconButton size='small' aria-label="Delete" onClick={() => deleteNode(node.id)}>
 							<ClearIcon />
 						</IconButton>
 						<h4>{`Node ${node.id}`}</h4>
@@ -134,7 +161,7 @@ function App() {
 					</div>
 					)
 				)}
-				<IconButton size="large" sx={{width: 150, height: 150}}>
+				<IconButton size="large" sx={{width: 150, height: 150}} onClick={addNode}>
 					<AddIcon />
 				</IconButton>
 				</div>

@@ -11,15 +11,45 @@ class ShardApp {
 	constructor(callbackFn: React.Dispatch<React.SetStateAction<ShardAppState>>) {
 		this.nodes = [];
 		this.callbackFn = callbackFn;
-
 		this.createNode([new Partition(0, MAX_KEY_SPACE)]);
-		console.log(this.nodes);
 	}
 
 	createNode(partitions?: Partition[]) {
 		const n = new Node(this.nodes.length, partitions);
 		this.nodes.push(n);
-		return n;
+
+		if (this.nodes.length > 1)
+			this.rebalanceNodes();
+	}
+
+	// Rebalance - steal partitions from most busy node and give them to the least
+	// busy node while the standard deviation is greater than 1
+	// Std Dev of 1 is arbitrary? but means our data is somewhat normally distributed
+	// https://en.wikipedia.org/wiki/68–95–99.7_rule
+	rebalanceNodes() {
+		let tries = 5;
+		let stdDev = this.getStdDev();
+		while (stdDev > 1 && tries) {
+			const leastBusy = this.getLeastBusyNode();
+			const mostBusy = this.getMostBusyNode();
+
+			const part = mostBusy.getBiggestPartition();
+			if (part) {
+				mostBusy.deletePartition(part);
+				leastBusy.insertPartition(part);
+			}
+			tries--;
+		}
+
+		this.callbackFn(this.getState());
+	}
+
+	getStdDev() {
+		const nodeRowCounts = this.nodes.map(n => this.getRowCount(n));
+		const mean = nodeRowCounts.reduce((prev, curr) => prev + curr) / this.nodes.length;
+		const squaredTerms = nodeRowCounts.map(count => Math.pow(count - mean, 2))
+		const numerator = squaredTerms.reduce((prev, curr) => prev + curr);
+		return Math.sqrt(Math.pow(numerator, 2) / this.nodes.length);
 	}
 
 	getPartitionKey(p: Partition) {
@@ -97,20 +127,44 @@ class ShardApp {
 		}
 	}
 
-	// Returns the node with the least amount of records
-	getLeastBusyNode() {
-		let maxDataCount = 0;
+	// Sum the number of rows in all the partitions on this node
+	getRowCount(n: Node) {
+		return n.partitions.map(p => p.data.length).reduce((prev, curr) => prev + curr, 0);
+	}
+
+	// Returns the node with the least number of records
+	getMostBusyNode() {
+		let maxCount = 0;
 		let n: Node = this.nodes[0];
 
 		for (const node of this.nodes) {
-			let dataCount = 0;
+			let currCount = 0;
 			for (const part of node.partitions) {
-				dataCount += part.data.length;
+				currCount += part.data.length;
 			}
 
-			if (dataCount > maxDataCount) {
+			if (currCount > maxCount) {
 				n = node;
-				maxDataCount = dataCount;
+				maxCount = currCount;
+			}
+		}
+		return n;
+	}
+
+	// Returns the node with the most number of records
+	getLeastBusyNode() {
+		let n: Node = this.nodes[0];
+		let minCount = this.getRowCount(n);
+
+		for (const node of this.nodes) {
+			let currCount = 0;
+			for (const part of node.partitions) {
+				currCount += part.data.length;
+			}
+
+			if (currCount < minCount) {
+				n = node;
+				minCount = currCount;
 			}
 		}
 		return n;
@@ -124,10 +178,17 @@ class ShardApp {
 	reset() {
 		this.nodes = [];
 		this.createNode([new Partition(0, MAX_KEY_SPACE)]);
+		this.callbackFn(this.getState());
 	}
 
+	// Delete the node from the array and assign it's partitions to other nodes
 	deleteNode(id: number) {
-		// TODO:
+		const parts = this.nodes.filter(n => n.id === id)[0].partitions;
+		this.nodes = this.nodes.filter(n => n.id !== id);
+
+		for (const p of parts) {
+			this.getLeastBusyNode().insertPartition(p);
+		}
 	}
 }
 

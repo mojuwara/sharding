@@ -33,18 +33,22 @@ class Node {
 		this.partitions.push(p);
 	}
 
-	// insert(value: any) {
-	// 	const hash = cyrb53(value.Name) % MAX_KEY_SPACE;
+	deletePartition(p: Partition) {
+		this.partitions = this.partitions.filter(currP => currP.minKey !== p.minKey && currP.maxKey !== p.maxKey);
+	}
 
-	// 	for (const p of this.partitions) {
-	// 		if (p.minKey <= hash && hash <= p.maxKey) {
-	// 			p.data.push(value);
-	// 			console.log(`Inserted ${value} into partition ${p}`);
-	// 			return;
-	// 		}
-	// 	}
-	// 	console.error(`Unable to find partition for key ${hash}, value: ${value}`)
-	// }
+	getBiggestPartition() {
+		if (!this.partitions.length)
+			return;
+
+		let part = this.partitions[0];
+		let count = this.partitions[0].data.length;
+		for (const p of this.partitions) {
+			if (p.data.length > count)
+				part = p
+		}
+		return part;
+	}
 }
 
 export default Node;
