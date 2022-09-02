@@ -18,17 +18,7 @@
 - Nodes can be added/removed from the UI
 	- It will trigger a rebalancing
 
-### Performance improvements:
-- Application:
-	- Find node storing a key
-	- Find busiest & least busy nodes
-	- Insert/Delete nodes by their ID (Probably not very expensive)
-
-- Nodes:
-	- Find arbitrary partition given a hash
-	- Insert/Remove arbitrary partitions
-	- Find the biggest partition
-	- Total row count
-
-- Partitions:
-	- Split a partition
+### Performance
+- Performance trade offs:
+	- Giving up complexity of maintaining a map of partitions/keys to their nodes and which nodes are most/least busy after each rebalance, data insertion and partition split/merge
+	- Accepting simplicity/slowness of simple arrays

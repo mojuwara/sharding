@@ -14,13 +14,13 @@ export type Car = {
 export const data: Car[] = [
 	{
 		"Name": "chevrolet chevelle malibu",
-		"Miles_per_Gallon": 18,
-		"Cylinders": 8,
-		"Displacement": 307,
-		"Horsepower": 130,
-		"Weight_in_lbs": 3504,
-		"Acceleration": 12,
-		"Year": "1970-01-01",
+		"Miles_per_Gallon": 17,
+		"Cylinders": 6,
+		"Displacement": 250,
+		"Horsepower": 100,
+		"Weight_in_lbs": 3329,
+		"Acceleration": 15.5,
+		"Year": "1971-01-01",
 		"Origin": "USA"
 	},
 	{
@@ -69,46 +69,46 @@ export const data: Car[] = [
 	},
 	{
 		"Name": "ford galaxie 500",
-		"Miles_per_Gallon": 15,
+		"Miles_per_Gallon": 14,
 		"Cylinders": 8,
-		"Displacement": 429,
-		"Horsepower": 198,
-		"Weight_in_lbs": 4341,
-		"Acceleration": 10,
-		"Year": "1970-01-01",
+		"Displacement": 351,
+		"Horsepower": 153,
+		"Weight_in_lbs": 4129,
+		"Acceleration": 13,
+		"Year": "1972-01-01",
 		"Origin": "USA"
 	},
 	{
 		"Name": "chevrolet impala",
-		"Miles_per_Gallon": 14,
+		"Miles_per_Gallon": 11,
 		"Cylinders": 8,
-		"Displacement": 454,
-		"Horsepower": 220,
-		"Weight_in_lbs": 4354,
-		"Acceleration": 9,
-		"Year": "1970-01-01",
+		"Displacement": 400,
+		"Horsepower": 150,
+		"Weight_in_lbs": 4997,
+		"Acceleration": 14,
+		"Year": "1973-01-01",
 		"Origin": "USA"
 	},
 	{
 		"Name": "plymouth fury iii",
-		"Miles_per_Gallon": 14,
+		"Miles_per_Gallon": 15,
 		"Cylinders": 8,
-		"Displacement": 440,
-		"Horsepower": 215,
-		"Weight_in_lbs": 4312,
-		"Acceleration": 8.5,
-		"Year": "1970-01-01",
+		"Displacement": 318,
+		"Horsepower": 150,
+		"Weight_in_lbs": 4135,
+		"Acceleration": 13.5,
+		"Year": "1972-01-01",
 		"Origin": "USA"
 	},
 	{
 		"Name": "pontiac catalina",
-		"Miles_per_Gallon": 14,
+		"Miles_per_Gallon": 16,
 		"Cylinders": 8,
-		"Displacement": 455,
-		"Horsepower": 225,
-		"Weight_in_lbs": 4425,
-		"Acceleration": 10,
-		"Year": "1970-01-01",
+		"Displacement": 400,
+		"Horsepower": 170,
+		"Weight_in_lbs": 4668,
+		"Acceleration": 11.5,
+		"Year": "1975-01-01",
 		"Origin": "USA"
 	},
 	{
@@ -135,13 +135,13 @@ export const data: Car[] = [
 	},
 	{
 		"Name": "chevrolet chevelle concours (sw)",
-		"Miles_per_Gallon": null,
+		"Miles_per_Gallon": 13,
 		"Cylinders": 8,
-		"Displacement": 350,
-		"Horsepower": 165,
-		"Weight_in_lbs": 4142,
-		"Acceleration": 11.5,
-		"Year": "1970-01-01",
+		"Displacement": 307,
+		"Horsepower": 130,
+		"Weight_in_lbs": 4098,
+		"Acceleration": 14,
+		"Year": "1972-01-01",
 		"Origin": "USA"
 	},
 	{
@@ -223,13 +223,13 @@ export const data: Car[] = [
 	},
 	{
 		"Name": "buick estate wagon (sw)",
-		"Miles_per_Gallon": 14,
+		"Miles_per_Gallon": 16.9,
 		"Cylinders": 8,
-		"Displacement": 455,
-		"Horsepower": 225,
-		"Weight_in_lbs": 3086,
-		"Acceleration": 10,
-		"Year": "1970-01-01",
+		"Displacement": 350,
+		"Horsepower": 155,
+		"Weight_in_lbs": 4360,
+		"Acceleration": 14.9,
+		"Year": "1979-01-01",
 		"Origin": "USA"
 	},
 	{
@@ -245,35 +245,35 @@ export const data: Car[] = [
 	},
 	{
 		"Name": "plymouth duster",
-		"Miles_per_Gallon": 22,
+		"Miles_per_Gallon": 20,
 		"Cylinders": 6,
 		"Displacement": 198,
 		"Horsepower": 95,
-		"Weight_in_lbs": 2833,
-		"Acceleration": 15.5,
-		"Year": "1970-01-01",
+		"Weight_in_lbs": 3102,
+		"Acceleration": 16.5,
+		"Year": "1974-01-01",
 		"Origin": "USA"
 	},
 	{
 		"Name": "amc hornet",
-		"Miles_per_Gallon": 18,
+		"Miles_per_Gallon": 22.5,
 		"Cylinders": 6,
-		"Displacement": 199,
-		"Horsepower": 97,
-		"Weight_in_lbs": 2774,
-		"Acceleration": 15.5,
-		"Year": "1970-01-01",
+		"Displacement": 232,
+		"Horsepower": 90,
+		"Weight_in_lbs": 3085,
+		"Acceleration": 17.6,
+		"Year": "1976-01-01",
 		"Origin": "USA"
 	},
 	{
 		"Name": "ford maverick",
-		"Miles_per_Gallon": 21,
+		"Miles_per_Gallon": 24,
 		"Cylinders": 6,
 		"Displacement": 200,
-		"Horsepower": 85,
-		"Weight_in_lbs": 2587,
-		"Acceleration": 16,
-		"Year": "1970-01-01",
+		"Horsepower": 81,
+		"Weight_in_lbs": 3012,
+		"Acceleration": 17.6,
+		"Year": "1976-01-01",
 		"Origin": "USA"
 	},
 	{
@@ -284,7 +284,7 @@ export const data: Car[] = [
 		"Horsepower": 88,
 		"Weight_in_lbs": 2130,
 		"Acceleration": 14.5,
-		"Year": "1970-01-01",
+		"Year": "1971-01-01",
 		"Origin": "Japan"
 	},
 	{
@@ -300,13 +300,13 @@ export const data: Car[] = [
 	},
 	{
 		"Name": "peugeot 504",
-		"Miles_per_Gallon": 25,
+		"Miles_per_Gallon": 27.2,
 		"Cylinders": 4,
-		"Displacement": 110,
-		"Horsepower": 87,
-		"Weight_in_lbs": 2672,
-		"Acceleration": 17.5,
-		"Year": "1970-01-01",
+		"Displacement": 141,
+		"Horsepower": 71,
+		"Weight_in_lbs": 3190,
+		"Acceleration": 24.8,
+		"Year": "1979-01-01",
 		"Origin": "Europe"
 	},
 	{
@@ -344,13 +344,13 @@ export const data: Car[] = [
 	},
 	{
 		"Name": "amc gremlin",
-		"Miles_per_Gallon": 21,
+		"Miles_per_Gallon": 20,
 		"Cylinders": 6,
-		"Displacement": 199,
-		"Horsepower": 90,
-		"Weight_in_lbs": 2648,
-		"Acceleration": 15,
-		"Year": "1970-01-01",
+		"Displacement": 232,
+		"Horsepower": 100,
+		"Weight_in_lbs": 2914,
+		"Acceleration": 16,
+		"Year": "1975-01-01",
 		"Origin": "USA"
 	},
 	{
@@ -398,17 +398,6 @@ export const data: Car[] = [
 		"Origin": "USA"
 	},
 	{
-		"Name": "datsun pl510",
-		"Miles_per_Gallon": 27,
-		"Cylinders": 4,
-		"Displacement": 97,
-		"Horsepower": 88,
-		"Weight_in_lbs": 2130,
-		"Acceleration": 14.5,
-		"Year": "1971-01-01",
-		"Origin": "Japan"
-	},
-	{
 		"Name": "chevrolet vega 2300",
 		"Miles_per_Gallon": 28,
 		"Cylinders": 4,
@@ -421,24 +410,24 @@ export const data: Car[] = [
 	},
 	{
 		"Name": "toyota corona",
-		"Miles_per_Gallon": 25,
+		"Miles_per_Gallon": 27.5,
 		"Cylinders": 4,
-		"Displacement": 113,
+		"Displacement": 134,
 		"Horsepower": 95,
-		"Weight_in_lbs": 2228,
-		"Acceleration": 14,
-		"Year": "1971-01-01",
+		"Weight_in_lbs": 2560,
+		"Acceleration": 14.2,
+		"Year": "1978-01-01",
 		"Origin": "Japan"
 	},
 	{
 		"Name": "ford pinto",
-		"Miles_per_Gallon": 25,
+		"Miles_per_Gallon": 26.5,
 		"Cylinders": 4,
-		"Displacement": 98,
-		"Horsepower": null,
-		"Weight_in_lbs": 2046,
-		"Acceleration": 19,
-		"Year": "1971-01-01",
+		"Displacement": 140,
+		"Horsepower": 72,
+		"Weight_in_lbs": 2565,
+		"Acceleration": 13.6,
+		"Year": "1976-01-01",
 		"Origin": "USA"
 	},
 	{
@@ -453,34 +442,12 @@ export const data: Car[] = [
 		"Origin": "Europe"
 	},
 	{
-		"Name": "amc gremlin",
-		"Miles_per_Gallon": 19,
-		"Cylinders": 6,
-		"Displacement": 232,
-		"Horsepower": 100,
-		"Weight_in_lbs": 2634,
-		"Acceleration": 13,
-		"Year": "1971-01-01",
-		"Origin": "USA"
-	},
-	{
 		"Name": "plymouth satellite custom",
 		"Miles_per_Gallon": 16,
 		"Cylinders": 6,
 		"Displacement": 225,
 		"Horsepower": 105,
 		"Weight_in_lbs": 3439,
-		"Acceleration": 15.5,
-		"Year": "1971-01-01",
-		"Origin": "USA"
-	},
-	{
-		"Name": "chevrolet chevelle malibu",
-		"Miles_per_Gallon": 17,
-		"Cylinders": 6,
-		"Displacement": 250,
-		"Horsepower": 100,
-		"Weight_in_lbs": 3329,
 		"Acceleration": 15.5,
 		"Year": "1971-01-01",
 		"Origin": "USA"
@@ -498,24 +465,13 @@ export const data: Car[] = [
 	},
 	{
 		"Name": "amc matador",
-		"Miles_per_Gallon": 18,
-		"Cylinders": 6,
-		"Displacement": 232,
-		"Horsepower": 100,
-		"Weight_in_lbs": 3288,
-		"Acceleration": 15.5,
-		"Year": "1971-01-01",
-		"Origin": "USA"
-	},
-	{
-		"Name": "chevrolet impala",
-		"Miles_per_Gallon": 14,
+		"Miles_per_Gallon": 15.5,
 		"Cylinders": 8,
-		"Displacement": 350,
-		"Horsepower": 165,
-		"Weight_in_lbs": 4209,
-		"Acceleration": 12,
-		"Year": "1971-01-01",
+		"Displacement": 304,
+		"Horsepower": 120,
+		"Weight_in_lbs": 3962,
+		"Acceleration": 13.9,
+		"Year": "1976-01-01",
 		"Origin": "USA"
 	},
 	{
@@ -526,28 +482,6 @@ export const data: Car[] = [
 		"Horsepower": 175,
 		"Weight_in_lbs": 4464,
 		"Acceleration": 11.5,
-		"Year": "1971-01-01",
-		"Origin": "USA"
-	},
-	{
-		"Name": "ford galaxie 500",
-		"Miles_per_Gallon": 14,
-		"Cylinders": 8,
-		"Displacement": 351,
-		"Horsepower": 153,
-		"Weight_in_lbs": 4154,
-		"Acceleration": 13.5,
-		"Year": "1971-01-01",
-		"Origin": "USA"
-	},
-	{
-		"Name": "plymouth fury iii",
-		"Miles_per_Gallon": 14,
-		"Cylinders": 8,
-		"Displacement": 318,
-		"Horsepower": 150,
-		"Weight_in_lbs": 4096,
-		"Acceleration": 13,
 		"Year": "1971-01-01",
 		"Origin": "USA"
 	},
@@ -564,13 +498,13 @@ export const data: Car[] = [
 	},
 	{
 		"Name": "ford country squire (sw)",
-		"Miles_per_Gallon": 13,
+		"Miles_per_Gallon": 15.5,
 		"Cylinders": 8,
-		"Displacement": 400,
-		"Horsepower": 170,
-		"Weight_in_lbs": 4746,
-		"Acceleration": 12,
-		"Year": "1971-01-01",
+		"Displacement": 351,
+		"Horsepower": 142,
+		"Weight_in_lbs": 4054,
+		"Acceleration": 14.3,
+		"Year": "1979-01-01",
 		"Origin": "USA"
 	},
 	{
@@ -641,13 +575,13 @@ export const data: Car[] = [
 	},
 	{
 		"Name": "opel 1900",
-		"Miles_per_Gallon": 28,
+		"Miles_per_Gallon": 25,
 		"Cylinders": 4,
 		"Displacement": 116,
-		"Horsepower": 90,
-		"Weight_in_lbs": 2123,
-		"Acceleration": 14,
-		"Year": "1971-01-01",
+		"Horsepower": 81,
+		"Weight_in_lbs": 2220,
+		"Acceleration": 16.9,
+		"Year": "1976-01-01",
 		"Origin": "Europe"
 	},
 	{
@@ -674,13 +608,13 @@ export const data: Car[] = [
 	},
 	{
 		"Name": "toyota corolla 1200",
-		"Miles_per_Gallon": 31,
+		"Miles_per_Gallon": 32,
 		"Cylinders": 4,
 		"Displacement": 71,
 		"Horsepower": 65,
-		"Weight_in_lbs": 1773,
-		"Acceleration": 19,
-		"Year": "1971-01-01",
+		"Weight_in_lbs": 1836,
+		"Acceleration": 21,
+		"Year": "1974-01-01",
 		"Origin": "Japan"
 	},
 	{
@@ -751,13 +685,13 @@ export const data: Car[] = [
 	},
 	{
 		"Name": "chevrolet vega",
-		"Miles_per_Gallon": 20,
+		"Miles_per_Gallon": 25,
 		"Cylinders": 4,
 		"Displacement": 140,
-		"Horsepower": 90,
-		"Weight_in_lbs": 2408,
-		"Acceleration": 19.5,
-		"Year": "1972-01-01",
+		"Horsepower": 75,
+		"Weight_in_lbs": 2542,
+		"Acceleration": 17,
+		"Year": "1974-01-01",
 		"Origin": "USA"
 	},
 	{
@@ -768,50 +702,6 @@ export const data: Car[] = [
 		"Horsepower": 86,
 		"Weight_in_lbs": 2226,
 		"Acceleration": 16.5,
-		"Year": "1972-01-01",
-		"Origin": "USA"
-	},
-	{
-		"Name": "chevrolet impala",
-		"Miles_per_Gallon": 13,
-		"Cylinders": 8,
-		"Displacement": 350,
-		"Horsepower": 165,
-		"Weight_in_lbs": 4274,
-		"Acceleration": 12,
-		"Year": "1972-01-01",
-		"Origin": "USA"
-	},
-	{
-		"Name": "pontiac catalina",
-		"Miles_per_Gallon": 14,
-		"Cylinders": 8,
-		"Displacement": 400,
-		"Horsepower": 175,
-		"Weight_in_lbs": 4385,
-		"Acceleration": 12,
-		"Year": "1972-01-01",
-		"Origin": "USA"
-	},
-	{
-		"Name": "plymouth fury iii",
-		"Miles_per_Gallon": 15,
-		"Cylinders": 8,
-		"Displacement": 318,
-		"Horsepower": 150,
-		"Weight_in_lbs": 4135,
-		"Acceleration": 13.5,
-		"Year": "1972-01-01",
-		"Origin": "USA"
-	},
-	{
-		"Name": "ford galaxie 500",
-		"Miles_per_Gallon": 14,
-		"Cylinders": 8,
-		"Displacement": 351,
-		"Horsepower": 153,
-		"Weight_in_lbs": 4129,
-		"Acceleration": 13,
 		"Year": "1972-01-01",
 		"Origin": "USA"
 	},
@@ -883,35 +773,24 @@ export const data: Car[] = [
 	},
 	{
 		"Name": "amc matador (sw)",
-		"Miles_per_Gallon": 15,
+		"Miles_per_Gallon": 14,
 		"Cylinders": 8,
 		"Displacement": 304,
 		"Horsepower": 150,
-		"Weight_in_lbs": 3892,
-		"Acceleration": 12.5,
-		"Year": "1972-01-01",
-		"Origin": "USA"
-	},
-	{
-		"Name": "chevrolet chevelle concours (sw)",
-		"Miles_per_Gallon": 13,
-		"Cylinders": 8,
-		"Displacement": 307,
-		"Horsepower": 130,
-		"Weight_in_lbs": 4098,
-		"Acceleration": 14,
-		"Year": "1972-01-01",
+		"Weight_in_lbs": 4257,
+		"Acceleration": 15.5,
+		"Year": "1974-01-01",
 		"Origin": "USA"
 	},
 	{
 		"Name": "ford gran torino (sw)",
-		"Miles_per_Gallon": 13,
+		"Miles_per_Gallon": 14,
 		"Cylinders": 8,
 		"Displacement": 302,
 		"Horsepower": 140,
-		"Weight_in_lbs": 4294,
+		"Weight_in_lbs": 4638,
 		"Acceleration": 16,
-		"Year": "1972-01-01",
+		"Year": "1974-01-01",
 		"Origin": "USA"
 	},
 	{
@@ -1036,36 +915,25 @@ export const data: Car[] = [
 		"Origin": "USA"
 	},
 	{
-		"Name": "amc matador",
-		"Miles_per_Gallon": 14,
-		"Cylinders": 8,
-		"Displacement": 304,
-		"Horsepower": 150,
-		"Weight_in_lbs": 3672,
-		"Acceleration": 11.5,
-		"Year": "1973-01-01",
-		"Origin": "USA"
-	},
-	{
 		"Name": "chevrolet malibu",
-		"Miles_per_Gallon": 13,
-		"Cylinders": 8,
-		"Displacement": 350,
-		"Horsepower": 145,
-		"Weight_in_lbs": 3988,
-		"Acceleration": 13,
-		"Year": "1973-01-01",
+		"Miles_per_Gallon": 20.5,
+		"Cylinders": 6,
+		"Displacement": 200,
+		"Horsepower": 95,
+		"Weight_in_lbs": 3155,
+		"Acceleration": 18.2,
+		"Year": "1978-01-01",
 		"Origin": "USA"
 	},
 	{
 		"Name": "ford gran torino",
-		"Miles_per_Gallon": 14,
+		"Miles_per_Gallon": 14.5,
 		"Cylinders": 8,
-		"Displacement": 302,
-		"Horsepower": 137,
-		"Weight_in_lbs": 4042,
-		"Acceleration": 14.5,
-		"Year": "1973-01-01",
+		"Displacement": 351,
+		"Horsepower": 152,
+		"Weight_in_lbs": 4215,
+		"Acceleration": 12.8,
+		"Year": "1976-01-01",
 		"Origin": "USA"
 	},
 	{
@@ -1092,24 +960,24 @@ export const data: Car[] = [
 	},
 	{
 		"Name": "chevrolet caprice classic",
-		"Miles_per_Gallon": 13,
+		"Miles_per_Gallon": 17,
 		"Cylinders": 8,
-		"Displacement": 400,
-		"Horsepower": 150,
-		"Weight_in_lbs": 4464,
-		"Acceleration": 12,
-		"Year": "1973-01-01",
+		"Displacement": 305,
+		"Horsepower": 130,
+		"Weight_in_lbs": 3840,
+		"Acceleration": 15.4,
+		"Year": "1979-01-01",
 		"Origin": "USA"
 	},
 	{
 		"Name": "ford ltd",
-		"Miles_per_Gallon": 13,
+		"Miles_per_Gallon": 14,
 		"Cylinders": 8,
 		"Displacement": 351,
-		"Horsepower": 158,
-		"Weight_in_lbs": 4363,
-		"Acceleration": 13,
-		"Year": "1973-01-01",
+		"Horsepower": 148,
+		"Weight_in_lbs": 4657,
+		"Acceleration": 13.5,
+		"Year": "1975-01-01",
 		"Origin": "USA"
 	},
 	{
@@ -1158,13 +1026,13 @@ export const data: Car[] = [
 	},
 	{
 		"Name": "plymouth valiant",
-		"Miles_per_Gallon": 18,
+		"Miles_per_Gallon": 22,
 		"Cylinders": 6,
 		"Displacement": 225,
-		"Horsepower": 105,
-		"Weight_in_lbs": 3121,
-		"Acceleration": 16.5,
-		"Year": "1973-01-01",
+		"Horsepower": 100,
+		"Weight_in_lbs": 3233,
+		"Acceleration": 15.4,
+		"Year": "1976-01-01",
 		"Origin": "USA"
 	},
 	{
@@ -1179,39 +1047,6 @@ export const data: Car[] = [
 		"Origin": "USA"
 	},
 	{
-		"Name": "amc hornet",
-		"Miles_per_Gallon": 18,
-		"Cylinders": 6,
-		"Displacement": 232,
-		"Horsepower": 100,
-		"Weight_in_lbs": 2945,
-		"Acceleration": 16,
-		"Year": "1973-01-01",
-		"Origin": "USA"
-	},
-	{
-		"Name": "ford maverick",
-		"Miles_per_Gallon": 18,
-		"Cylinders": 6,
-		"Displacement": 250,
-		"Horsepower": 88,
-		"Weight_in_lbs": 3021,
-		"Acceleration": 16.5,
-		"Year": "1973-01-01",
-		"Origin": "USA"
-	},
-	{
-		"Name": "plymouth duster",
-		"Miles_per_Gallon": 23,
-		"Cylinders": 6,
-		"Displacement": 198,
-		"Horsepower": 95,
-		"Weight_in_lbs": 2904,
-		"Acceleration": 16,
-		"Year": "1973-01-01",
-		"Origin": "USA"
-	},
-	{
 		"Name": "volkswagen super beetle",
 		"Miles_per_Gallon": 26,
 		"Cylinders": 4,
@@ -1221,17 +1056,6 @@ export const data: Car[] = [
 		"Acceleration": 21,
 		"Year": "1973-01-01",
 		"Origin": "Europe"
-	},
-	{
-		"Name": "chevrolet impala",
-		"Miles_per_Gallon": 11,
-		"Cylinders": 8,
-		"Displacement": 400,
-		"Horsepower": 150,
-		"Weight_in_lbs": 4997,
-		"Acceleration": 14,
-		"Year": "1973-01-01",
-		"Origin": "USA"
 	},
 	{
 		"Name": "ford country",
@@ -1267,17 +1091,6 @@ export const data: Car[] = [
 		"Origin": "USA"
 	},
 	{
-		"Name": "amc gremlin",
-		"Miles_per_Gallon": 18,
-		"Cylinders": 6,
-		"Displacement": 232,
-		"Horsepower": 100,
-		"Weight_in_lbs": 2789,
-		"Acceleration": 15,
-		"Year": "1973-01-01",
-		"Origin": "USA"
-	},
-	{
 		"Name": "toyota carina",
 		"Miles_per_Gallon": 20,
 		"Cylinders": 4,
@@ -1287,17 +1100,6 @@ export const data: Car[] = [
 		"Acceleration": 19,
 		"Year": "1973-01-01",
 		"Origin": "Japan"
-	},
-	{
-		"Name": "chevrolet vega",
-		"Miles_per_Gallon": 21,
-		"Cylinders": 4,
-		"Displacement": 140,
-		"Horsepower": 72,
-		"Weight_in_lbs": 2401,
-		"Acceleration": 19.5,
-		"Year": "1973-01-01",
-		"Origin": "USA"
 	},
 	{
 		"Name": "datsun 610",
@@ -1320,17 +1122,6 @@ export const data: Car[] = [
 		"Acceleration": 13.5,
 		"Year": "1973-01-01",
 		"Origin": "Japan"
-	},
-	{
-		"Name": "ford pinto",
-		"Miles_per_Gallon": 19,
-		"Cylinders": 4,
-		"Displacement": 122,
-		"Horsepower": 85,
-		"Weight_in_lbs": 2310,
-		"Acceleration": 18.5,
-		"Year": "1973-01-01",
-		"Origin": "USA"
 	},
 	{
 		"Name": "mercury capri v6",
@@ -1378,35 +1169,35 @@ export const data: Car[] = [
 	},
 	{
 		"Name": "fiat 128",
-		"Miles_per_Gallon": 29,
+		"Miles_per_Gallon": 24,
 		"Cylinders": 4,
-		"Displacement": 68,
-		"Horsepower": 49,
-		"Weight_in_lbs": 1867,
-		"Acceleration": 19.5,
-		"Year": "1973-01-01",
+		"Displacement": 90,
+		"Horsepower": 75,
+		"Weight_in_lbs": 2108,
+		"Acceleration": 15.5,
+		"Year": "1974-01-01",
 		"Origin": "Europe"
 	},
 	{
 		"Name": "opel manta",
-		"Miles_per_Gallon": 24,
+		"Miles_per_Gallon": 26,
 		"Cylinders": 4,
-		"Displacement": 116,
-		"Horsepower": 75,
-		"Weight_in_lbs": 2158,
-		"Acceleration": 15.5,
-		"Year": "1973-01-01",
+		"Displacement": 97,
+		"Horsepower": 78,
+		"Weight_in_lbs": 2300,
+		"Acceleration": 14.5,
+		"Year": "1974-01-01",
 		"Origin": "Europe"
 	},
 	{
 		"Name": "audi 100ls",
-		"Miles_per_Gallon": 20,
+		"Miles_per_Gallon": 23,
 		"Cylinders": 4,
-		"Displacement": 114,
-		"Horsepower": 91,
-		"Weight_in_lbs": 2582,
-		"Acceleration": 14,
-		"Year": "1973-01-01",
+		"Displacement": 115,
+		"Horsepower": 95,
+		"Weight_in_lbs": 2694,
+		"Acceleration": 15,
+		"Year": "1975-01-01",
 		"Origin": "Europe"
 	},
 	{
@@ -1433,24 +1224,24 @@ export const data: Car[] = [
 	},
 	{
 		"Name": "saab 99le",
-		"Miles_per_Gallon": 24,
+		"Miles_per_Gallon": 25,
 		"Cylinders": 4,
 		"Displacement": 121,
-		"Horsepower": 110,
-		"Weight_in_lbs": 2660,
-		"Acceleration": 14,
-		"Year": "1973-01-01",
+		"Horsepower": 115,
+		"Weight_in_lbs": 2671,
+		"Acceleration": 13.5,
+		"Year": "1975-01-01",
 		"Origin": "Europe"
 	},
 	{
 		"Name": "toyota mark ii",
-		"Miles_per_Gallon": 20,
+		"Miles_per_Gallon": 19,
 		"Cylinders": 6,
 		"Displacement": 156,
-		"Horsepower": 122,
-		"Weight_in_lbs": 2807,
-		"Acceleration": 13.5,
-		"Year": "1973-01-01",
+		"Horsepower": 108,
+		"Weight_in_lbs": 2930,
+		"Acceleration": 15.5,
+		"Year": "1976-01-01",
 		"Origin": "Japan"
 	},
 	{
@@ -1465,47 +1256,14 @@ export const data: Car[] = [
 		"Origin": "USA"
 	},
 	{
-		"Name": "plymouth duster",
-		"Miles_per_Gallon": 20,
-		"Cylinders": 6,
-		"Displacement": 198,
-		"Horsepower": 95,
-		"Weight_in_lbs": 3102,
-		"Acceleration": 16.5,
-		"Year": "1974-01-01",
-		"Origin": "USA"
-	},
-	{
-		"Name": "ford maverick",
-		"Miles_per_Gallon": 21,
-		"Cylinders": 6,
-		"Displacement": 200,
-		"Horsepower": null,
-		"Weight_in_lbs": 2875,
-		"Acceleration": 17,
-		"Year": "1974-01-01",
-		"Origin": "USA"
-	},
-	{
-		"Name": "amc hornet",
-		"Miles_per_Gallon": 19,
-		"Cylinders": 6,
-		"Displacement": 232,
-		"Horsepower": 100,
-		"Weight_in_lbs": 2901,
-		"Acceleration": 16,
-		"Year": "1974-01-01",
-		"Origin": "USA"
-	},
-	{
 		"Name": "chevrolet nova",
-		"Miles_per_Gallon": 15,
+		"Miles_per_Gallon": 22,
 		"Cylinders": 6,
 		"Displacement": 250,
-		"Horsepower": 100,
-		"Weight_in_lbs": 3336,
-		"Acceleration": 17,
-		"Year": "1974-01-01",
+		"Horsepower": 105,
+		"Weight_in_lbs": 3353,
+		"Acceleration": 14.5,
+		"Year": "1976-01-01",
 		"Origin": "USA"
 	},
 	{
@@ -1520,58 +1278,14 @@ export const data: Car[] = [
 		"Origin": "Japan"
 	},
 	{
-		"Name": "ford pinto",
-		"Miles_per_Gallon": 26,
-		"Cylinders": 4,
-		"Displacement": 122,
-		"Horsepower": 80,
-		"Weight_in_lbs": 2451,
-		"Acceleration": 16.5,
-		"Year": "1974-01-01",
-		"Origin": "USA"
-	},
-	{
-		"Name": "toyota corolla 1200",
-		"Miles_per_Gallon": 32,
-		"Cylinders": 4,
-		"Displacement": 71,
-		"Horsepower": 65,
-		"Weight_in_lbs": 1836,
-		"Acceleration": 21,
-		"Year": "1974-01-01",
-		"Origin": "Japan"
-	},
-	{
-		"Name": "chevrolet vega",
-		"Miles_per_Gallon": 25,
-		"Cylinders": 4,
-		"Displacement": 140,
-		"Horsepower": 75,
-		"Weight_in_lbs": 2542,
-		"Acceleration": 17,
-		"Year": "1974-01-01",
-		"Origin": "USA"
-	},
-	{
 		"Name": "chevrolet chevelle malibu classic",
-		"Miles_per_Gallon": 16,
-		"Cylinders": 6,
-		"Displacement": 250,
-		"Horsepower": 100,
-		"Weight_in_lbs": 3781,
-		"Acceleration": 17,
-		"Year": "1974-01-01",
-		"Origin": "USA"
-	},
-	{
-		"Name": "amc matador",
-		"Miles_per_Gallon": 16,
-		"Cylinders": 6,
-		"Displacement": 258,
-		"Horsepower": 110,
-		"Weight_in_lbs": 3632,
-		"Acceleration": 18,
-		"Year": "1974-01-01",
+		"Miles_per_Gallon": 17.5,
+		"Cylinders": 8,
+		"Displacement": 305,
+		"Horsepower": 140,
+		"Weight_in_lbs": 4215,
+		"Acceleration": 13,
+		"Year": "1976-01-01",
 		"Origin": "USA"
 	},
 	{
@@ -1582,17 +1296,6 @@ export const data: Car[] = [
 		"Horsepower": 105,
 		"Weight_in_lbs": 3613,
 		"Acceleration": 16.5,
-		"Year": "1974-01-01",
-		"Origin": "USA"
-	},
-	{
-		"Name": "ford gran torino",
-		"Miles_per_Gallon": 16,
-		"Cylinders": 8,
-		"Displacement": 302,
-		"Horsepower": 140,
-		"Weight_in_lbs": 4141,
-		"Acceleration": 14,
 		"Year": "1974-01-01",
 		"Origin": "USA"
 	},
@@ -1619,28 +1322,6 @@ export const data: Car[] = [
 		"Origin": "USA"
 	},
 	{
-		"Name": "ford gran torino (sw)",
-		"Miles_per_Gallon": 14,
-		"Cylinders": 8,
-		"Displacement": 302,
-		"Horsepower": 140,
-		"Weight_in_lbs": 4638,
-		"Acceleration": 16,
-		"Year": "1974-01-01",
-		"Origin": "USA"
-	},
-	{
-		"Name": "amc matador (sw)",
-		"Miles_per_Gallon": 14,
-		"Cylinders": 8,
-		"Displacement": 304,
-		"Horsepower": 150,
-		"Weight_in_lbs": 4257,
-		"Acceleration": 15.5,
-		"Year": "1974-01-01",
-		"Origin": "USA"
-	},
-	{
 		"Name": "audi fox",
 		"Miles_per_Gallon": 29,
 		"Cylinders": 4,
@@ -1653,69 +1334,36 @@ export const data: Car[] = [
 	},
 	{
 		"Name": "volkswagen dasher",
-		"Miles_per_Gallon": 26,
-		"Cylinders": 4,
-		"Displacement": 79,
-		"Horsepower": 67,
-		"Weight_in_lbs": 1963,
-		"Acceleration": 15.5,
-		"Year": "1974-01-01",
-		"Origin": "Europe"
-	},
-	{
-		"Name": "opel manta",
-		"Miles_per_Gallon": 26,
+		"Miles_per_Gallon": 30.5,
 		"Cylinders": 4,
 		"Displacement": 97,
 		"Horsepower": 78,
-		"Weight_in_lbs": 2300,
-		"Acceleration": 14.5,
-		"Year": "1974-01-01",
+		"Weight_in_lbs": 2190,
+		"Acceleration": 14.1,
+		"Year": "1977-01-01",
 		"Origin": "Europe"
 	},
 	{
-		"Name": "toyota corona",
-		"Miles_per_Gallon": 31,
-		"Cylinders": 4,
-		"Displacement": 76,
-		"Horsepower": 52,
-		"Weight_in_lbs": 1649,
-		"Acceleration": 16.5,
-		"Year": "1974-01-01",
-		"Origin": "Japan"
-	},
-	{
 		"Name": "datsun 710",
-		"Miles_per_Gallon": 32,
+		"Miles_per_Gallon": 24,
 		"Cylinders": 4,
-		"Displacement": 83,
-		"Horsepower": 61,
-		"Weight_in_lbs": 2003,
-		"Acceleration": 19,
-		"Year": "1974-01-01",
+		"Displacement": 119,
+		"Horsepower": 97,
+		"Weight_in_lbs": 2545,
+		"Acceleration": 17,
+		"Year": "1975-01-01",
 		"Origin": "Japan"
 	},
 	{
 		"Name": "dodge colt",
-		"Miles_per_Gallon": 28,
+		"Miles_per_Gallon": 27.9,
 		"Cylinders": 4,
-		"Displacement": 90,
-		"Horsepower": 75,
-		"Weight_in_lbs": 2125,
-		"Acceleration": 14.5,
-		"Year": "1974-01-01",
+		"Displacement": 156,
+		"Horsepower": 105,
+		"Weight_in_lbs": 2800,
+		"Acceleration": 14.4,
+		"Year": "1980-01-01",
 		"Origin": "USA"
-	},
-	{
-		"Name": "fiat 128",
-		"Miles_per_Gallon": 24,
-		"Cylinders": 4,
-		"Displacement": 90,
-		"Horsepower": 75,
-		"Weight_in_lbs": 2108,
-		"Acceleration": 15.5,
-		"Year": "1974-01-01",
-		"Origin": "Europe"
 	},
 	{
 		"Name": "fiat 124 tc",
@@ -1730,24 +1378,24 @@ export const data: Car[] = [
 	},
 	{
 		"Name": "honda civic",
-		"Miles_per_Gallon": 24,
+		"Miles_per_Gallon": 38,
 		"Cylinders": 4,
-		"Displacement": 120,
-		"Horsepower": 97,
-		"Weight_in_lbs": 2489,
+		"Displacement": 91,
+		"Horsepower": 67,
+		"Weight_in_lbs": 1965,
 		"Acceleration": 15,
-		"Year": "1974-01-01",
+		"Year": "1982-01-01",
 		"Origin": "Japan"
 	},
 	{
 		"Name": "subaru",
-		"Miles_per_Gallon": 26,
+		"Miles_per_Gallon": 32.3,
 		"Cylinders": 4,
-		"Displacement": 108,
-		"Horsepower": 93,
-		"Weight_in_lbs": 2391,
-		"Acceleration": 15.5,
-		"Year": "1974-01-01",
+		"Displacement": 97,
+		"Horsepower": 67,
+		"Weight_in_lbs": 2065,
+		"Acceleration": 17.8,
+		"Year": "1982-01-01",
 		"Origin": "Japan"
 	},
 	{
@@ -1773,17 +1421,6 @@ export const data: Car[] = [
 		"Origin": "USA"
 	},
 	{
-		"Name": "chevrolet nova",
-		"Miles_per_Gallon": 18,
-		"Cylinders": 6,
-		"Displacement": 250,
-		"Horsepower": 105,
-		"Weight_in_lbs": 3459,
-		"Acceleration": 16,
-		"Year": "1975-01-01",
-		"Origin": "USA"
-	},
-	{
 		"Name": "mercury monarch",
 		"Miles_per_Gallon": 15,
 		"Cylinders": 6,
@@ -1791,28 +1428,6 @@ export const data: Car[] = [
 		"Horsepower": 72,
 		"Weight_in_lbs": 3432,
 		"Acceleration": 21,
-		"Year": "1975-01-01",
-		"Origin": "USA"
-	},
-	{
-		"Name": "ford maverick",
-		"Miles_per_Gallon": 15,
-		"Cylinders": 6,
-		"Displacement": 250,
-		"Horsepower": 72,
-		"Weight_in_lbs": 3158,
-		"Acceleration": 19.5,
-		"Year": "1975-01-01",
-		"Origin": "USA"
-	},
-	{
-		"Name": "pontiac catalina",
-		"Miles_per_Gallon": 16,
-		"Cylinders": 8,
-		"Displacement": 400,
-		"Horsepower": 170,
-		"Weight_in_lbs": 4668,
-		"Acceleration": 11.5,
 		"Year": "1975-01-01",
 		"Origin": "USA"
 	},
@@ -1839,25 +1454,14 @@ export const data: Car[] = [
 		"Origin": "USA"
 	},
 	{
-		"Name": "ford ltd",
-		"Miles_per_Gallon": 14,
-		"Cylinders": 8,
-		"Displacement": 351,
-		"Horsepower": 148,
-		"Weight_in_lbs": 4657,
-		"Acceleration": 13.5,
-		"Year": "1975-01-01",
-		"Origin": "USA"
-	},
-	{
 		"Name": "buick century",
-		"Miles_per_Gallon": 17,
+		"Miles_per_Gallon": 22.4,
 		"Cylinders": 6,
 		"Displacement": 231,
 		"Horsepower": 110,
-		"Weight_in_lbs": 3907,
-		"Acceleration": 21,
-		"Year": "1975-01-01",
+		"Weight_in_lbs": 3415,
+		"Acceleration": 15.8,
+		"Year": "1982-01-01",
 		"Origin": "USA"
 	},
 	{
@@ -1868,17 +1472,6 @@ export const data: Car[] = [
 		"Horsepower": 105,
 		"Weight_in_lbs": 3897,
 		"Acceleration": 18.5,
-		"Year": "1975-01-01",
-		"Origin": "USA"
-	},
-	{
-		"Name": "amc matador",
-		"Miles_per_Gallon": 15,
-		"Cylinders": 6,
-		"Displacement": 258,
-		"Horsepower": 110,
-		"Weight_in_lbs": 3730,
-		"Acceleration": 19,
 		"Year": "1975-01-01",
 		"Origin": "USA"
 	},
@@ -1928,36 +1521,14 @@ export const data: Car[] = [
 	},
 	{
 		"Name": "toyota corolla",
-		"Miles_per_Gallon": 29,
+		"Miles_per_Gallon": 34,
 		"Cylinders": 4,
-		"Displacement": 97,
-		"Horsepower": 75,
-		"Weight_in_lbs": 2171,
-		"Acceleration": 16,
-		"Year": "1975-01-01",
+		"Displacement": 108,
+		"Horsepower": 70,
+		"Weight_in_lbs": 2245,
+		"Acceleration": 16.9,
+		"Year": "1982-01-01",
 		"Origin": "Japan"
-	},
-	{
-		"Name": "ford pinto",
-		"Miles_per_Gallon": 23,
-		"Cylinders": 4,
-		"Displacement": 140,
-		"Horsepower": 83,
-		"Weight_in_lbs": 2639,
-		"Acceleration": 17,
-		"Year": "1975-01-01",
-		"Origin": "USA"
-	},
-	{
-		"Name": "amc gremlin",
-		"Miles_per_Gallon": 20,
-		"Cylinders": 6,
-		"Displacement": 232,
-		"Horsepower": 100,
-		"Weight_in_lbs": 2914,
-		"Acceleration": 16,
-		"Year": "1975-01-01",
-		"Origin": "USA"
 	},
 	{
 		"Name": "pontiac astro",
@@ -1971,58 +1542,14 @@ export const data: Car[] = [
 		"Origin": "USA"
 	},
 	{
-		"Name": "toyota corona",
-		"Miles_per_Gallon": 24,
-		"Cylinders": 4,
-		"Displacement": 134,
-		"Horsepower": 96,
-		"Weight_in_lbs": 2702,
-		"Acceleration": 13.5,
-		"Year": "1975-01-01",
-		"Origin": "Japan"
-	},
-	{
-		"Name": "volkswagen dasher",
-		"Miles_per_Gallon": 25,
-		"Cylinders": 4,
-		"Displacement": 90,
-		"Horsepower": 71,
-		"Weight_in_lbs": 2223,
-		"Acceleration": 16.5,
-		"Year": "1975-01-01",
-		"Origin": "Europe"
-	},
-	{
-		"Name": "datsun 710",
-		"Miles_per_Gallon": 24,
-		"Cylinders": 4,
-		"Displacement": 119,
-		"Horsepower": 97,
-		"Weight_in_lbs": 2545,
-		"Acceleration": 17,
-		"Year": "1975-01-01",
-		"Origin": "Japan"
-	},
-	{
-		"Name": "ford pinto",
-		"Miles_per_Gallon": 18,
-		"Cylinders": 6,
-		"Displacement": 171,
-		"Horsepower": 97,
-		"Weight_in_lbs": 2984,
-		"Acceleration": 14.5,
-		"Year": "1975-01-01",
-		"Origin": "USA"
-	},
-	{
 		"Name": "volkswagen rabbit",
-		"Miles_per_Gallon": 29,
+		"Miles_per_Gallon": 29.5,
 		"Cylinders": 4,
-		"Displacement": 90,
-		"Horsepower": 70,
-		"Weight_in_lbs": 1937,
-		"Acceleration": 14,
-		"Year": "1975-01-01",
+		"Displacement": 97,
+		"Horsepower": 71,
+		"Weight_in_lbs": 1825,
+		"Acceleration": 12.2,
+		"Year": "1976-01-01",
 		"Origin": "Europe"
 	},
 	{
@@ -2037,28 +1564,6 @@ export const data: Car[] = [
 		"Origin": "USA"
 	},
 	{
-		"Name": "audi 100ls",
-		"Miles_per_Gallon": 23,
-		"Cylinders": 4,
-		"Displacement": 115,
-		"Horsepower": 95,
-		"Weight_in_lbs": 2694,
-		"Acceleration": 15,
-		"Year": "1975-01-01",
-		"Origin": "Europe"
-	},
-	{
-		"Name": "peugeot 504",
-		"Miles_per_Gallon": 23,
-		"Cylinders": 4,
-		"Displacement": 120,
-		"Horsepower": 88,
-		"Weight_in_lbs": 2957,
-		"Acceleration": 17,
-		"Year": "1975-01-01",
-		"Origin": "Europe"
-	},
-	{
 		"Name": "volvo 244dl",
 		"Miles_per_Gallon": 22,
 		"Cylinders": 4,
@@ -2070,25 +1575,14 @@ export const data: Car[] = [
 		"Origin": "Europe"
 	},
 	{
-		"Name": "saab 99le",
-		"Miles_per_Gallon": 25,
-		"Cylinders": 4,
-		"Displacement": 121,
-		"Horsepower": 115,
-		"Weight_in_lbs": 2671,
-		"Acceleration": 13.5,
-		"Year": "1975-01-01",
-		"Origin": "Europe"
-	},
-	{
 		"Name": "honda civic cvcc",
-		"Miles_per_Gallon": 33,
+		"Miles_per_Gallon": 36.1,
 		"Cylinders": 4,
 		"Displacement": 91,
-		"Horsepower": 53,
-		"Weight_in_lbs": 1795,
-		"Acceleration": 17.5,
-		"Year": "1975-01-01",
+		"Horsepower": 60,
+		"Weight_in_lbs": 1800,
+		"Acceleration": 16.4,
+		"Year": "1978-01-01",
 		"Origin": "Japan"
 	},
 	{
@@ -2099,17 +1593,6 @@ export const data: Car[] = [
 		"Horsepower": 86,
 		"Weight_in_lbs": 2464,
 		"Acceleration": 15.5,
-		"Year": "1976-01-01",
-		"Origin": "Europe"
-	},
-	{
-		"Name": "opel 1900",
-		"Miles_per_Gallon": 25,
-		"Cylinders": 4,
-		"Displacement": 116,
-		"Horsepower": 81,
-		"Weight_in_lbs": 2220,
-		"Acceleration": 16.9,
 		"Year": "1976-01-01",
 		"Origin": "Europe"
 	},
@@ -2125,17 +1608,6 @@ export const data: Car[] = [
 		"Origin": "USA"
 	},
 	{
-		"Name": "dodge colt",
-		"Miles_per_Gallon": 26,
-		"Cylinders": 4,
-		"Displacement": 98,
-		"Horsepower": 79,
-		"Weight_in_lbs": 2255,
-		"Acceleration": 17.7,
-		"Year": "1976-01-01",
-		"Origin": "USA"
-	},
-	{
 		"Name": "renault 12tl",
 		"Miles_per_Gallon": 27,
 		"Cylinders": 4,
@@ -2145,17 +1617,6 @@ export const data: Car[] = [
 		"Acceleration": 15.3,
 		"Year": "1976-01-01",
 		"Origin": "Europe"
-	},
-	{
-		"Name": "chevrolet chevelle malibu classic",
-		"Miles_per_Gallon": 17.5,
-		"Cylinders": 8,
-		"Displacement": 305,
-		"Horsepower": 140,
-		"Weight_in_lbs": 4215,
-		"Acceleration": 13,
-		"Year": "1976-01-01",
-		"Origin": "USA"
 	},
 	{
 		"Name": "dodge coronet brougham",
@@ -2169,80 +1630,14 @@ export const data: Car[] = [
 		"Origin": "USA"
 	},
 	{
-		"Name": "amc matador",
-		"Miles_per_Gallon": 15.5,
-		"Cylinders": 8,
-		"Displacement": 304,
-		"Horsepower": 120,
-		"Weight_in_lbs": 3962,
-		"Acceleration": 13.9,
-		"Year": "1976-01-01",
-		"Origin": "USA"
-	},
-	{
-		"Name": "ford gran torino",
-		"Miles_per_Gallon": 14.5,
-		"Cylinders": 8,
-		"Displacement": 351,
-		"Horsepower": 152,
-		"Weight_in_lbs": 4215,
-		"Acceleration": 12.8,
-		"Year": "1976-01-01",
-		"Origin": "USA"
-	},
-	{
-		"Name": "plymouth valiant",
-		"Miles_per_Gallon": 22,
-		"Cylinders": 6,
-		"Displacement": 225,
-		"Horsepower": 100,
-		"Weight_in_lbs": 3233,
-		"Acceleration": 15.4,
-		"Year": "1976-01-01",
-		"Origin": "USA"
-	},
-	{
-		"Name": "chevrolet nova",
-		"Miles_per_Gallon": 22,
-		"Cylinders": 6,
-		"Displacement": 250,
-		"Horsepower": 105,
-		"Weight_in_lbs": 3353,
-		"Acceleration": 14.5,
-		"Year": "1976-01-01",
-		"Origin": "USA"
-	},
-	{
-		"Name": "ford maverick",
-		"Miles_per_Gallon": 24,
-		"Cylinders": 6,
-		"Displacement": 200,
-		"Horsepower": 81,
-		"Weight_in_lbs": 3012,
-		"Acceleration": 17.6,
-		"Year": "1976-01-01",
-		"Origin": "USA"
-	},
-	{
-		"Name": "amc hornet",
-		"Miles_per_Gallon": 22.5,
-		"Cylinders": 6,
-		"Displacement": 232,
-		"Horsepower": 90,
-		"Weight_in_lbs": 3085,
-		"Acceleration": 17.6,
-		"Year": "1976-01-01",
-		"Origin": "USA"
-	},
-	{
 		"Name": "chevrolet chevette",
-		"Miles_per_Gallon": 29,
+		"Miles_per_Gallon": 32.1,
 		"Cylinders": 4,
-		"Displacement": 85,
-		"Horsepower": 52,
-		"Weight_in_lbs": 2035,
-		"Acceleration": 22.2,
-		"Year": "1976-01-01",
+		"Displacement": 98,
+		"Horsepower": 70,
+		"Weight_in_lbs": 2120,
+		"Acceleration": 15.5,
+		"Year": "1980-01-01",
 		"Origin": "USA"
 	},
 	{
@@ -2258,25 +1653,14 @@ export const data: Car[] = [
 	},
 	{
 		"Name": "vw rabbit",
-		"Miles_per_Gallon": 29,
+		"Miles_per_Gallon": 41.5,
 		"Cylinders": 4,
-		"Displacement": 90,
-		"Horsepower": 70,
-		"Weight_in_lbs": 1937,
-		"Acceleration": 14.2,
-		"Year": "1976-01-01",
+		"Displacement": 98,
+		"Horsepower": 76,
+		"Weight_in_lbs": 2144,
+		"Acceleration": 14.7,
+		"Year": "1980-01-01",
 		"Origin": "Europe"
-	},
-	{
-		"Name": "honda civic",
-		"Miles_per_Gallon": 33,
-		"Cylinders": 4,
-		"Displacement": 91,
-		"Horsepower": 53,
-		"Weight_in_lbs": 1795,
-		"Acceleration": 17.4,
-		"Year": "1976-01-01",
-		"Origin": "Japan"
 	},
 	{
 		"Name": "dodge aspen se",
@@ -2323,17 +1707,6 @@ export const data: Car[] = [
 		"Origin": "USA"
 	},
 	{
-		"Name": "volkswagen rabbit",
-		"Miles_per_Gallon": 29.5,
-		"Cylinders": 4,
-		"Displacement": 97,
-		"Horsepower": 71,
-		"Weight_in_lbs": 1825,
-		"Acceleration": 12.2,
-		"Year": "1976-01-01",
-		"Origin": "Europe"
-	},
-	{
 		"Name": "datsun b-210",
 		"Miles_per_Gallon": 32,
 		"Cylinders": 4,
@@ -2343,28 +1716,6 @@ export const data: Car[] = [
 		"Acceleration": 17,
 		"Year": "1976-01-01",
 		"Origin": "Japan"
-	},
-	{
-		"Name": "toyota corolla",
-		"Miles_per_Gallon": 28,
-		"Cylinders": 4,
-		"Displacement": 97,
-		"Horsepower": 75,
-		"Weight_in_lbs": 2155,
-		"Acceleration": 16.4,
-		"Year": "1976-01-01",
-		"Origin": "Japan"
-	},
-	{
-		"Name": "ford pinto",
-		"Miles_per_Gallon": 26.5,
-		"Cylinders": 4,
-		"Displacement": 140,
-		"Horsepower": 72,
-		"Weight_in_lbs": 2565,
-		"Acceleration": 13.6,
-		"Year": "1976-01-01",
-		"Origin": "USA"
 	},
 	{
 		"Name": "volvo 245",
@@ -2387,28 +1738,6 @@ export const data: Car[] = [
 		"Acceleration": 13.2,
 		"Year": "1976-01-01",
 		"Origin": "USA"
-	},
-	{
-		"Name": "peugeot 504",
-		"Miles_per_Gallon": 19,
-		"Cylinders": 4,
-		"Displacement": 120,
-		"Horsepower": 88,
-		"Weight_in_lbs": 3270,
-		"Acceleration": 21.9,
-		"Year": "1976-01-01",
-		"Origin": "Europe"
-	},
-	{
-		"Name": "toyota mark ii",
-		"Miles_per_Gallon": 19,
-		"Cylinders": 6,
-		"Displacement": 156,
-		"Horsepower": 108,
-		"Weight_in_lbs": 2930,
-		"Acceleration": 15.5,
-		"Year": "1976-01-01",
-		"Origin": "Japan"
 	},
 	{
 		"Name": "mercedes-benz 280s",
@@ -2521,17 +1850,6 @@ export const data: Car[] = [
 		"Origin": "Japan"
 	},
 	{
-		"Name": "chevrolet caprice classic",
-		"Miles_per_Gallon": 17.5,
-		"Cylinders": 8,
-		"Displacement": 305,
-		"Horsepower": 145,
-		"Weight_in_lbs": 3880,
-		"Acceleration": 12.5,
-		"Year": "1977-01-01",
-		"Origin": "USA"
-	},
-	{
 		"Name": "oldsmobile cutlass supreme",
 		"Miles_per_Gallon": 17,
 		"Cylinders": 8,
@@ -2577,13 +1895,13 @@ export const data: Car[] = [
 	},
 	{
 		"Name": "buick skylark",
-		"Miles_per_Gallon": 20.5,
-		"Cylinders": 6,
-		"Displacement": 231,
-		"Horsepower": 105,
-		"Weight_in_lbs": 3425,
-		"Acceleration": 16.9,
-		"Year": "1977-01-01",
+		"Miles_per_Gallon": 26.6,
+		"Cylinders": 4,
+		"Displacement": 151,
+		"Horsepower": 84,
+		"Weight_in_lbs": 2635,
+		"Acceleration": 16.4,
+		"Year": "1982-01-01",
 		"Origin": "USA"
 	},
 	{
@@ -2621,13 +1939,13 @@ export const data: Car[] = [
 	},
 	{
 		"Name": "chevrolet monte carlo landau",
-		"Miles_per_Gallon": 15.5,
+		"Miles_per_Gallon": 19.2,
 		"Cylinders": 8,
-		"Displacement": 350,
-		"Horsepower": 170,
-		"Weight_in_lbs": 4165,
-		"Acceleration": 11.4,
-		"Year": "1977-01-01",
+		"Displacement": 305,
+		"Horsepower": 145,
+		"Weight_in_lbs": 3425,
+		"Acceleration": 13.2,
+		"Year": "1978-01-01",
 		"Origin": "USA"
 	},
 	{
@@ -2697,17 +2015,6 @@ export const data: Car[] = [
 		"Origin": "USA"
 	},
 	{
-		"Name": "chevrolet chevette",
-		"Miles_per_Gallon": 30.5,
-		"Cylinders": 4,
-		"Displacement": 98,
-		"Horsepower": 63,
-		"Weight_in_lbs": 2051,
-		"Acceleration": 17,
-		"Year": "1977-01-01",
-		"Origin": "USA"
-	},
-	{
 		"Name": "dodge colt m/m",
 		"Miles_per_Gallon": 33.5,
 		"Cylinders": 4,
@@ -2720,25 +2027,14 @@ export const data: Car[] = [
 	},
 	{
 		"Name": "subaru dl",
-		"Miles_per_Gallon": 30,
+		"Miles_per_Gallon": 33.8,
 		"Cylinders": 4,
 		"Displacement": 97,
 		"Horsepower": 67,
-		"Weight_in_lbs": 1985,
-		"Acceleration": 16.4,
-		"Year": "1977-01-01",
+		"Weight_in_lbs": 2145,
+		"Acceleration": 18,
+		"Year": "1980-01-01",
 		"Origin": "Japan"
-	},
-	{
-		"Name": "volkswagen dasher",
-		"Miles_per_Gallon": 30.5,
-		"Cylinders": 4,
-		"Displacement": 97,
-		"Horsepower": 78,
-		"Weight_in_lbs": 2190,
-		"Acceleration": 14.1,
-		"Year": "1977-01-01",
-		"Origin": "Europe"
 	},
 	{
 		"Name": "datsun 810",
@@ -2818,25 +2114,14 @@ export const data: Car[] = [
 		"Origin": "Japan"
 	},
 	{
-		"Name": "honda civic cvcc",
-		"Miles_per_Gallon": 36.1,
-		"Cylinders": 4,
-		"Displacement": 91,
-		"Horsepower": 60,
-		"Weight_in_lbs": 1800,
-		"Acceleration": 16.4,
-		"Year": "1978-01-01",
-		"Origin": "Japan"
-	},
-	{
 		"Name": "oldsmobile cutlass salon brougham",
-		"Miles_per_Gallon": 19.9,
+		"Miles_per_Gallon": 23.9,
 		"Cylinders": 8,
 		"Displacement": 260,
-		"Horsepower": 110,
-		"Weight_in_lbs": 3365,
-		"Acceleration": 15.5,
-		"Year": "1978-01-01",
+		"Horsepower": 90,
+		"Weight_in_lbs": 3420,
+		"Acceleration": 22.2,
+		"Year": "1979-01-01",
 		"Origin": "USA"
 	},
 	{
@@ -2869,17 +2154,6 @@ export const data: Car[] = [
 		"Horsepower": 105,
 		"Weight_in_lbs": 3535,
 		"Acceleration": 19.2,
-		"Year": "1978-01-01",
-		"Origin": "USA"
-	},
-	{
-		"Name": "chevrolet malibu",
-		"Miles_per_Gallon": 20.5,
-		"Cylinders": 6,
-		"Displacement": 200,
-		"Horsepower": 95,
-		"Weight_in_lbs": 3155,
-		"Acceleration": 18.2,
 		"Year": "1978-01-01",
 		"Origin": "USA"
 	},
@@ -2918,13 +2192,13 @@ export const data: Car[] = [
 	},
 	{
 		"Name": "amc concord",
-		"Miles_per_Gallon": 19.4,
-		"Cylinders": 6,
-		"Displacement": 232,
+		"Miles_per_Gallon": 24.3,
+		"Cylinders": 4,
+		"Displacement": 151,
 		"Horsepower": 90,
-		"Weight_in_lbs": 3210,
-		"Acceleration": 17.2,
-		"Year": "1978-01-01",
+		"Weight_in_lbs": 3003,
+		"Acceleration": 20.1,
+		"Year": "1980-01-01",
 		"Origin": "USA"
 	},
 	{
@@ -2951,13 +2225,13 @@ export const data: Car[] = [
 	},
 	{
 		"Name": "dodge aspen",
-		"Miles_per_Gallon": 18.6,
+		"Miles_per_Gallon": 19.1,
 		"Cylinders": 6,
 		"Displacement": 225,
-		"Horsepower": 110,
-		"Weight_in_lbs": 3620,
+		"Horsepower": 90,
+		"Weight_in_lbs": 3381,
 		"Acceleration": 18.7,
-		"Year": "1978-01-01",
+		"Year": "1980-01-01",
 		"Origin": "USA"
 	},
 	{
@@ -2968,17 +2242,6 @@ export const data: Car[] = [
 		"Horsepower": 120,
 		"Weight_in_lbs": 3410,
 		"Acceleration": 15.1,
-		"Year": "1978-01-01",
-		"Origin": "USA"
-	},
-	{
-		"Name": "chevrolet monte carlo landau",
-		"Miles_per_Gallon": 19.2,
-		"Cylinders": 8,
-		"Displacement": 305,
-		"Horsepower": 145,
-		"Weight_in_lbs": 3425,
-		"Acceleration": 13.2,
 		"Year": "1978-01-01",
 		"Origin": "USA"
 	},
@@ -3014,28 +2277,6 @@ export const data: Car[] = [
 		"Acceleration": 13.7,
 		"Year": "1978-01-01",
 		"Origin": "USA"
-	},
-	{
-		"Name": "chevrolet chevette",
-		"Miles_per_Gallon": 30,
-		"Cylinders": 4,
-		"Displacement": 98,
-		"Horsepower": 68,
-		"Weight_in_lbs": 2155,
-		"Acceleration": 16.5,
-		"Year": "1978-01-01",
-		"Origin": "USA"
-	},
-	{
-		"Name": "toyota corona",
-		"Miles_per_Gallon": 27.5,
-		"Cylinders": 4,
-		"Displacement": 134,
-		"Horsepower": 95,
-		"Weight_in_lbs": 2560,
-		"Acceleration": 14.2,
-		"Year": "1978-01-01",
-		"Origin": "Japan"
 	},
 	{
 		"Name": "datsun 510",
@@ -3225,17 +2466,6 @@ export const data: Car[] = [
 		"Origin": "USA"
 	},
 	{
-		"Name": "chevrolet caprice classic",
-		"Miles_per_Gallon": 17,
-		"Cylinders": 8,
-		"Displacement": 305,
-		"Horsepower": 130,
-		"Weight_in_lbs": 3840,
-		"Acceleration": 15.4,
-		"Year": "1979-01-01",
-		"Origin": "USA"
-	},
-	{
 		"Name": "ford ltd landau",
 		"Miles_per_Gallon": 17.6,
 		"Cylinders": 8,
@@ -3265,28 +2495,6 @@ export const data: Car[] = [
 		"Horsepower": 135,
 		"Weight_in_lbs": 3830,
 		"Acceleration": 15.2,
-		"Year": "1979-01-01",
-		"Origin": "USA"
-	},
-	{
-		"Name": "buick estate wagon (sw)",
-		"Miles_per_Gallon": 16.9,
-		"Cylinders": 8,
-		"Displacement": 350,
-		"Horsepower": 155,
-		"Weight_in_lbs": 4360,
-		"Acceleration": 14.9,
-		"Year": "1979-01-01",
-		"Origin": "USA"
-	},
-	{
-		"Name": "ford country squire (sw)",
-		"Miles_per_Gallon": 15.5,
-		"Cylinders": 8,
-		"Displacement": 351,
-		"Horsepower": 142,
-		"Weight_in_lbs": 4054,
-		"Acceleration": 14.3,
 		"Year": "1979-01-01",
 		"Origin": "USA"
 	},
@@ -3379,28 +2587,6 @@ export const data: Car[] = [
 		"Origin": "USA"
 	},
 	{
-		"Name": "peugeot 504",
-		"Miles_per_Gallon": 27.2,
-		"Cylinders": 4,
-		"Displacement": 141,
-		"Horsepower": 71,
-		"Weight_in_lbs": 3190,
-		"Acceleration": 24.8,
-		"Year": "1979-01-01",
-		"Origin": "Europe"
-	},
-	{
-		"Name": "oldsmobile cutlass salon brougham",
-		"Miles_per_Gallon": 23.9,
-		"Cylinders": 8,
-		"Displacement": 260,
-		"Horsepower": 90,
-		"Weight_in_lbs": 3420,
-		"Acceleration": 22.2,
-		"Year": "1979-01-01",
-		"Origin": "USA"
-	},
-	{
 		"Name": "plymouth horizon",
 		"Miles_per_Gallon": 34.2,
 		"Cylinders": 4,
@@ -3424,13 +2610,13 @@ export const data: Car[] = [
 	},
 	{
 		"Name": "datsun 210",
-		"Miles_per_Gallon": 31.8,
+		"Miles_per_Gallon": 37,
 		"Cylinders": 4,
 		"Displacement": 85,
 		"Horsepower": 65,
-		"Weight_in_lbs": 2020,
-		"Acceleration": 19.2,
-		"Year": "1979-01-01",
+		"Weight_in_lbs": 1975,
+		"Acceleration": 19.4,
+		"Year": "1982-01-01",
 		"Origin": "Japan"
 	},
 	{
@@ -3457,13 +2643,13 @@ export const data: Car[] = [
 	},
 	{
 		"Name": "chevrolet citation",
-		"Miles_per_Gallon": 28.8,
+		"Miles_per_Gallon": 23.5,
 		"Cylinders": 6,
 		"Displacement": 173,
-		"Horsepower": 115,
-		"Weight_in_lbs": 2595,
-		"Acceleration": 11.3,
-		"Year": "1979-01-01",
+		"Horsepower": 110,
+		"Weight_in_lbs": 2725,
+		"Acceleration": 12.6,
+		"Year": "1982-01-01",
 		"Origin": "USA"
 	},
 	{
@@ -3479,25 +2665,14 @@ export const data: Car[] = [
 	},
 	{
 		"Name": "pontiac phoenix",
-		"Miles_per_Gallon": 33.5,
+		"Miles_per_Gallon": 27,
 		"Cylinders": 4,
 		"Displacement": 151,
 		"Horsepower": 90,
-		"Weight_in_lbs": 2556,
-		"Acceleration": 13.2,
-		"Year": "1979-01-01",
+		"Weight_in_lbs": 2735,
+		"Acceleration": 18,
+		"Year": "1982-01-01",
 		"Origin": "USA"
-	},
-	{
-		"Name": "vw rabbit",
-		"Miles_per_Gallon": 41.5,
-		"Cylinders": 4,
-		"Displacement": 98,
-		"Horsepower": 76,
-		"Weight_in_lbs": 2144,
-		"Acceleration": 14.7,
-		"Year": "1980-01-01",
-		"Origin": "Europe"
 	},
 	{
 		"Name": "toyota corolla tercel",
@@ -3511,17 +2686,6 @@ export const data: Car[] = [
 		"Origin": "Japan"
 	},
 	{
-		"Name": "chevrolet chevette",
-		"Miles_per_Gallon": 32.1,
-		"Cylinders": 4,
-		"Displacement": 98,
-		"Horsepower": 70,
-		"Weight_in_lbs": 2120,
-		"Acceleration": 15.5,
-		"Year": "1980-01-01",
-		"Origin": "USA"
-	},
-	{
 		"Name": "datsun 310",
 		"Miles_per_Gallon": 37.2,
 		"Cylinders": 4,
@@ -3533,17 +2697,6 @@ export const data: Car[] = [
 		"Origin": "Japan"
 	},
 	{
-		"Name": "chevrolet citation",
-		"Miles_per_Gallon": 28,
-		"Cylinders": 4,
-		"Displacement": 151,
-		"Horsepower": 90,
-		"Weight_in_lbs": 2678,
-		"Acceleration": 16.5,
-		"Year": "1980-01-01",
-		"Origin": "USA"
-	},
-	{
 		"Name": "ford fairmont",
 		"Miles_per_Gallon": 26.4,
 		"Cylinders": 4,
@@ -3551,28 +2704,6 @@ export const data: Car[] = [
 		"Horsepower": 88,
 		"Weight_in_lbs": 2870,
 		"Acceleration": 18.1,
-		"Year": "1980-01-01",
-		"Origin": "USA"
-	},
-	{
-		"Name": "amc concord",
-		"Miles_per_Gallon": 24.3,
-		"Cylinders": 4,
-		"Displacement": 151,
-		"Horsepower": 90,
-		"Weight_in_lbs": 3003,
-		"Acceleration": 20.1,
-		"Year": "1980-01-01",
-		"Origin": "USA"
-	},
-	{
-		"Name": "dodge aspen",
-		"Miles_per_Gallon": 19.1,
-		"Cylinders": 6,
-		"Displacement": 225,
-		"Horsepower": 90,
-		"Weight_in_lbs": 3381,
-		"Acceleration": 18.7,
 		"Year": "1980-01-01",
 		"Origin": "USA"
 	},
@@ -3600,13 +2731,13 @@ export const data: Car[] = [
 	},
 	{
 		"Name": "mazda 626",
-		"Miles_per_Gallon": 31.3,
+		"Miles_per_Gallon": 31.6,
 		"Cylinders": 4,
 		"Displacement": 120,
-		"Horsepower": 75,
-		"Weight_in_lbs": 2542,
-		"Acceleration": 17.5,
-		"Year": "1980-01-01",
+		"Horsepower": 74,
+		"Weight_in_lbs": 2635,
+		"Acceleration": 18.3,
+		"Year": "1982-01-01",
 		"Origin": "Japan"
 	},
 	{
@@ -3621,17 +2752,6 @@ export const data: Car[] = [
 		"Origin": "Japan"
 	},
 	{
-		"Name": "toyota corolla",
-		"Miles_per_Gallon": 32.2,
-		"Cylinders": 4,
-		"Displacement": 108,
-		"Horsepower": 75,
-		"Weight_in_lbs": 2265,
-		"Acceleration": 15.2,
-		"Year": "1980-01-01",
-		"Origin": "Japan"
-	},
-	{
 		"Name": "mazda glc",
 		"Miles_per_Gallon": 46.6,
 		"Cylinders": 4,
@@ -3639,28 +2759,6 @@ export const data: Car[] = [
 		"Horsepower": 65,
 		"Weight_in_lbs": 2110,
 		"Acceleration": 17.9,
-		"Year": "1980-01-01",
-		"Origin": "Japan"
-	},
-	{
-		"Name": "dodge colt",
-		"Miles_per_Gallon": 27.9,
-		"Cylinders": 4,
-		"Displacement": 156,
-		"Horsepower": 105,
-		"Weight_in_lbs": 2800,
-		"Acceleration": 14.4,
-		"Year": "1980-01-01",
-		"Origin": "USA"
-	},
-	{
-		"Name": "datsun 210",
-		"Miles_per_Gallon": 40.8,
-		"Cylinders": 4,
-		"Displacement": 85,
-		"Horsepower": 65,
-		"Weight_in_lbs": 2110,
-		"Acceleration": 19.2,
 		"Year": "1980-01-01",
 		"Origin": "Japan"
 	},
@@ -3731,17 +2829,6 @@ export const data: Car[] = [
 		"Origin": "Europe"
 	},
 	{
-		"Name": "subaru dl",
-		"Miles_per_Gallon": 33.8,
-		"Cylinders": 4,
-		"Displacement": 97,
-		"Horsepower": 67,
-		"Weight_in_lbs": 2145,
-		"Acceleration": 18,
-		"Year": "1980-01-01",
-		"Origin": "Japan"
-	},
-	{
 		"Name": "vokswagen rabbit",
 		"Miles_per_Gallon": 29.8,
 		"Cylinders": 4,
@@ -3798,34 +2885,23 @@ export const data: Car[] = [
 	},
 	{
 		"Name": "honda Accelerationord",
-		"Miles_per_Gallon": 32.4,
+		"Miles_per_Gallon": 36,
 		"Cylinders": 4,
 		"Displacement": 107,
-		"Horsepower": 72,
-		"Weight_in_lbs": 2290,
-		"Acceleration": 17,
-		"Year": "1980-01-01",
+		"Horsepower": 75,
+		"Weight_in_lbs": 2205,
+		"Acceleration": 14.5,
+		"Year": "1982-01-01",
 		"Origin": "Japan"
 	},
 	{
 		"Name": "plymouth reliant",
-		"Miles_per_Gallon": 27.2,
+		"Miles_per_Gallon": 30,
 		"Cylinders": 4,
 		"Displacement": 135,
 		"Horsepower": 84,
-		"Weight_in_lbs": 2490,
-		"Acceleration": 15.7,
-		"Year": "1982-01-01",
-		"Origin": "USA"
-	},
-	{
-		"Name": "buick skylark",
-		"Miles_per_Gallon": 26.6,
-		"Cylinders": 4,
-		"Displacement": 151,
-		"Horsepower": 84,
-		"Weight_in_lbs": 2635,
-		"Acceleration": 16.4,
+		"Weight_in_lbs": 2385,
+		"Acceleration": 12.9,
 		"Year": "1982-01-01",
 		"Origin": "USA"
 	},
@@ -3837,28 +2913,6 @@ export const data: Car[] = [
 		"Horsepower": 92,
 		"Weight_in_lbs": 2620,
 		"Acceleration": 14.4,
-		"Year": "1982-01-01",
-		"Origin": "USA"
-	},
-	{
-		"Name": "chevrolet citation",
-		"Miles_per_Gallon": 23.5,
-		"Cylinders": 6,
-		"Displacement": 173,
-		"Horsepower": 110,
-		"Weight_in_lbs": 2725,
-		"Acceleration": 12.6,
-		"Year": "1982-01-01",
-		"Origin": "USA"
-	},
-	{
-		"Name": "plymouth reliant",
-		"Miles_per_Gallon": 30,
-		"Cylinders": 4,
-		"Displacement": 135,
-		"Horsepower": 84,
-		"Weight_in_lbs": 2385,
-		"Acceleration": 12.9,
 		"Year": "1982-01-01",
 		"Origin": "USA"
 	},
@@ -3892,28 +2946,6 @@ export const data: Car[] = [
 		"Horsepower": 60,
 		"Weight_in_lbs": 1760,
 		"Acceleration": 16.1,
-		"Year": "1982-01-01",
-		"Origin": "Japan"
-	},
-	{
-		"Name": "subaru",
-		"Miles_per_Gallon": 32.3,
-		"Cylinders": 4,
-		"Displacement": 97,
-		"Horsepower": 67,
-		"Weight_in_lbs": 2065,
-		"Acceleration": 17.8,
-		"Year": "1982-01-01",
-		"Origin": "Japan"
-	},
-	{
-		"Name": "datsun 210",
-		"Miles_per_Gallon": 37,
-		"Cylinders": 4,
-		"Displacement": 85,
-		"Horsepower": 65,
-		"Weight_in_lbs": 1975,
-		"Acceleration": 19.4,
 		"Year": "1982-01-01",
 		"Origin": "Japan"
 	},
@@ -4006,17 +3038,6 @@ export const data: Car[] = [
 		"Origin": "Japan"
 	},
 	{
-		"Name": "toyota corolla",
-		"Miles_per_Gallon": 32.4,
-		"Cylinders": 4,
-		"Displacement": 108,
-		"Horsepower": 75,
-		"Weight_in_lbs": 2350,
-		"Acceleration": 16.8,
-		"Year": "1982-01-01",
-		"Origin": "Japan"
-	},
-	{
 		"Name": "datsun 200sx",
 		"Miles_per_Gallon": 32.9,
 		"Cylinders": 4,
@@ -4024,17 +3045,6 @@ export const data: Car[] = [
 		"Horsepower": 100,
 		"Weight_in_lbs": 2615,
 		"Acceleration": 14.8,
-		"Year": "1982-01-01",
-		"Origin": "Japan"
-	},
-	{
-		"Name": "mazda 626",
-		"Miles_per_Gallon": 31.6,
-		"Cylinders": 4,
-		"Displacement": 120,
-		"Horsepower": 74,
-		"Weight_in_lbs": 2635,
-		"Acceleration": 18.3,
 		"Year": "1982-01-01",
 		"Origin": "Japan"
 	},
@@ -4092,17 +3102,6 @@ export const data: Car[] = [
 		"Acceleration": 13.8,
 		"Year": "1982-01-01",
 		"Origin": "Japan"
-	},
-	{
-		"Name": "buick century",
-		"Miles_per_Gallon": 22.4,
-		"Cylinders": 6,
-		"Displacement": 231,
-		"Horsepower": 110,
-		"Weight_in_lbs": 3415,
-		"Acceleration": 15.8,
-		"Year": "1982-01-01",
-		"Origin": "USA"
 	},
 	{
 		"Name": "oldsmobile cutlass ls",
@@ -4193,17 +3192,6 @@ export const data: Car[] = [
 		"Origin": "USA"
 	},
 	{
-		"Name": "pontiac phoenix",
-		"Miles_per_Gallon": 27,
-		"Cylinders": 4,
-		"Displacement": 151,
-		"Horsepower": 90,
-		"Weight_in_lbs": 2735,
-		"Acceleration": 18,
-		"Year": "1982-01-01",
-		"Origin": "USA"
-	},
-	{
 		"Name": "ford fairmont futura",
 		"Miles_per_Gallon": 24,
 		"Cylinders": 4,
@@ -4288,39 +3276,6 @@ export const data: Car[] = [
 		"Horsepower": 88,
 		"Weight_in_lbs": 2160,
 		"Acceleration": 14.5,
-		"Year": "1982-01-01",
-		"Origin": "Japan"
-	},
-	{
-		"Name": "honda Accelerationord",
-		"Miles_per_Gallon": 36,
-		"Cylinders": 4,
-		"Displacement": 107,
-		"Horsepower": 75,
-		"Weight_in_lbs": 2205,
-		"Acceleration": 14.5,
-		"Year": "1982-01-01",
-		"Origin": "Japan"
-	},
-	{
-		"Name": "toyota corolla",
-		"Miles_per_Gallon": 34,
-		"Cylinders": 4,
-		"Displacement": 108,
-		"Horsepower": 70,
-		"Weight_in_lbs": 2245,
-		"Acceleration": 16.9,
-		"Year": "1982-01-01",
-		"Origin": "Japan"
-	},
-	{
-		"Name": "honda civic",
-		"Miles_per_Gallon": 38,
-		"Cylinders": 4,
-		"Displacement": 91,
-		"Horsepower": 67,
-		"Weight_in_lbs": 1965,
-		"Acceleration": 15,
 		"Year": "1982-01-01",
 		"Origin": "Japan"
 	},
@@ -4478,4 +3433,4 @@ export const data: Car[] = [
 		"Year": "1982-01-01",
 		"Origin": "USA"
 	}
-]
+];

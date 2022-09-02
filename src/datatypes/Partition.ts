@@ -8,6 +8,10 @@ class Partition {
 		this.maxKey = max;
 		this.data = data || [];
 	}
+
+	length() {
+		return this.data.length;
+	}
 }
 
 export default Partition
