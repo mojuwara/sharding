@@ -219,17 +219,6 @@ const Help = () => {
 				<li>To scale, balancing the load of queries across multiple servers</li>
 				<li>For redundancy, </li>
 			</ul>
-			<br />
-
-			<h3>Implementation:</h3>
-			<Divider />
-			<p>There are some number of nodes, each node is responsible for some number of partitions and each partition is responsible for some range of keys.</p>
-			<p>When a piece of data (in this case, cars) gets inserted, the key for that piece of data is determined via a hash function.</p>
-			<p>The key tells us which partition that piece of data will reside in.</p>
-			<p>When a partition exceeds a certain size, it will be split in half.</p>
-			<p>When a new node is introduced, the new node will take on partitions from existing nodes to balance the load.</p>
-			<p>When a node is removed, it's partitions will be spread across the remaining nodes.</p>
-			<br/>
 
 			<h3>Controls</h3>
 			<Divider />
@@ -246,6 +235,15 @@ const Help = () => {
 				<li>An "X" to remove that node from the cluster</li>
 				<li>Buttons representing each partition stored on that node, click to view it's data</li>
 			</ul>
+
+			<h3>Implementation:</h3>
+			<Divider />
+			<p>There are some number of nodes, each node is responsible for some number of partitions and each partition is responsible for some range of keys.</p>
+			<p>When a piece of data (in this case, cars) gets inserted, the key for that piece of data is determined via a hash function.</p>
+			<p>The key tells us which partition that piece of data will reside in.</p>
+			<p>When a partition exceeds a certain size, it will be split in half.</p>
+			<p>When a new node is introduced, the new node will take on partitions from existing nodes to balance the load.</p>
+			<p>When a node is removed, it's partitions will be spread across the remaining nodes.</p>
 		</div>
 	);
 }
